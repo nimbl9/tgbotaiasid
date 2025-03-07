@@ -23,7 +23,7 @@ def send_developers(call: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda call: call.data == "docs")
 def send_docs_menu(call: CallbackQuery):
-    doc_link = "https://github.com/nimble365/aisid2025_bot/blob/main/tech_doc.md"
+    doc_link = "https://github.com/nimbl9/tgbotaiasid/blob/main/tech_doc.md"
     keyboard = InlineKeyboardMarkup()
     keyboard.row(InlineKeyboardButton("🌐 Открыть документацию", url=doc_link))
     keyboard.row(InlineKeyboardButton("📄 Скачать документацию", callback_data="download_docs"))
@@ -37,7 +37,7 @@ def send_docs_file(call: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda call: call.data == "presentation")
 def send_presentation_menu(call: CallbackQuery):
-    presentation_link = "https://github.com/nimble365/aisid2025_bot/blob/main/aisid2025_presentation.pdf"
+    presentation_link = "https://github.com/nimbl9/tgbotaiasid/blob/main/AISID2025.pdf"
     keyboard = InlineKeyboardMarkup()
     keyboard.row(InlineKeyboardButton("🌐 Открыть презентацию", url=presentation_link))
     keyboard.row(InlineKeyboardButton("📥 Скачать презентацию", callback_data="download_presentation"))
@@ -46,7 +46,7 @@ def send_presentation_menu(call: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda call: call.data == "download_presentation")
 def send_presentation_file(call: CallbackQuery):
-    bot.send_document(call.message.chat.id, InputFile("aisid2025_presentation.pdf"), caption="📥 Презентация проекта")
+    bot.send_document(call.message.chat.id, InputFile("AISID2025.pdf"), caption="📥 Презентация проекта")
     bot.send_message(call.message.chat.id, "🔙 Вернуться в главное меню:", reply_markup=main_menu())
 
 @bot.callback_query_handler(func=lambda call: call.data == "back")
