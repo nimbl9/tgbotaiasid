@@ -54,13 +54,13 @@ python bot.py
 #### 5. Структура проекта
 ```
 /aisid2025_bot
-│── bot.py                # Код Telegram-бота
-│── tech_doc.md           # Техническая документация в MD
-│── aisid2025_presentation.pdf # Презентация проекта в PDF
-│── README.md             # Документация проекта
-│── requirements.txt      # Список зависимостей
-│── Procfile              # Файл для деплоя (если используется Heroku)
-│── runtime.txt           # Указание версии Python (если используется Heroku)
+│── bot.py                   # Код Telegram-бота
+│── tech_doc.md              # Техническая документация
+│── AISID2025.pdf            # Презентация проекта
+│── README.md                # Описание проекта
+│── requirements.txt         # Список зависимостей
+│── runtime.txt              # Версия python
+│── Procfile                 # Файл для деплоя
 ```
 
 ---
