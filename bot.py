@@ -23,7 +23,7 @@ def send_developers(call: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda call: call.data == "docs")
 def send_docs_menu(call: CallbackQuery):
-    doc_link = "https://github.com/nimbl9/tgbotaiasid/blob/main/tech_doc.md"
+    doc_link = "https://docs.google.com/document/d/1hXXYnLH5xNwOOpMC7c3S5zzWkBZx83MW/edit?usp=drive_link&ouid=113780296157828094590&rtpof=true&sd=true"
     keyboard = InlineKeyboardMarkup()
     keyboard.row(InlineKeyboardButton("Открыть документацию", url=doc_link))
     keyboard.row(InlineKeyboardButton("Скачать документацию", callback_data="download_docs"))
@@ -37,7 +37,7 @@ def send_docs_file(call: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda call: call.data == "presentation")
 def send_presentation_menu(call: CallbackQuery):
-    presentation_link = "https://github.com/nimbl9/tgbotaiasid/blob/main/AISID2025.pdf"
+    presentation_link = "https://docs.google.com/presentation/d/1jrCS_VrKYrJCpALuJDKDp4shAQxc1AH4/edit?usp=drive_link&ouid=113780296157828094590&rtpof=true&sd=true"
     keyboard = InlineKeyboardMarkup()
     keyboard.row(InlineKeyboardButton("Открыть презентацию", url=presentation_link))
     keyboard.row(InlineKeyboardButton("Скачать презентацию", callback_data="download_presentation"))
